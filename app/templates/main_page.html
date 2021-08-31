@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+<link
+      href="{{ url_for('static', filename='styles/main_page.css' ) }}"
+      rel="stylesheet"
+    />
+{% block content %}
+    <div class="wrapper">
+        <div class="navbar">
+            <button class="options">Log In</button>
+            <button class="options">Register</button>
+            <button class="options">Information</button>
+            <button class="options">Who are we?</button>
+        </div>
+    </div>
+{% endblock %}
