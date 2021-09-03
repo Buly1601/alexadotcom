@@ -1,8 +1,13 @@
 {% extends "index.html" %}
+
+{% block head %}
 <link
       href="{{ url_for('static', filename='styles/main_page.css' ) }}"
       rel="stylesheet"
-    />
+/>
+
+{% endblock %}
+
 {% block content %}
     <div class="wrapper">
         <div class="navbar">
@@ -11,5 +16,17 @@
             <button class="options">Information</button>
             <button class="options">Who are we?</button>
         </div>
+
+        <div class="title">
+            <h1 class="title_txt">Alexa</h1>
+            <p class="descr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae, voluptate ipsum sit, nam totam sunt nobis accusantium 
+                quia soluta amet magni nesciunt, minus aliquam ex facere asperiores. 
+                Unde, nisi eum!
+            </p>
+        </div>
+
+        <div class="layer1 spacer"></div>
     </div>
 {% endblock %}
